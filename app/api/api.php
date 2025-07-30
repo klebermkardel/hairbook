@@ -40,7 +40,24 @@ $action = isset($_GET['action']) ? sanitize_input($_GET['action']) : '';
 
 // A estrutura 'switch' será usada para rotear as requisições para as funções corretas
 switch ($action) {
-    // O próximo passo vai adicionar os 'case' para 'get_services', 'get_available_times' e 'make_appointment'
+    case 'get_services':
+        // ############ Lógica para obter a lista de serviços ############
+        $sql = "SELECT id, nome, duracao_minutos, preco FROM servicos ORDER BY nome ASC";
+        $result = $conn->query($sql);
+
+        $services = []; // Array para armazenar os serviços
+
+        // Verifica se a consulta retornou resultados
+        if ($result->num_rows > 0) {
+            // Itera sobre cada linha do resultado e adiciona ao array de serviços
+            while($row = $result->fetch_assoc()) {
+                $services[] = $row;
+            }
+        }
+        // Retorna a lista de serviços em formato JSON
+        echo json_encode($services);
+        break; // Importante: interrompe a execução do switch
+
     default:
         // Se a ação solicitada não for reconhecida, retorna um erro
         echo json_encode(['success' => false, 'message' => 'Ação inválida ou não especificada.']);
