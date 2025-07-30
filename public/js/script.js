@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function loadServices() {
         try {
             // Faz uma requisição GET para a API para obter a lista de serviços
-            const response = await fetch('api.php?action=get_services');
+            const response = await fetch('../app/api/api.php?action=get_services');
             // Converte a resposta para JSON
             const services = await response.json();
 
