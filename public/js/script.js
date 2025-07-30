@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             // Faz uma requisição GET para a API para obter os horários disponíveis
             // Passa a data e o ID do serviço como parâmetros na URL
-            const response = await fetch(`api.php?action=get_available_times&date=${selectedDate}&service_id=${selectedServiceId}`);
+            const response = await fetch(`../app/api/api.php?action=get_available_times&date=${selectedDate}&service_id=${selectedServiceId}`);
             const times = await response.json(); // Converte a resposta para JSON (uma array de horários)
 
             // Limpa o seletor de horários
