@@ -1,0 +1,20 @@
+/* Estilos gerais para o corpo da página */
+body {
+    background-color: #f8f9fa; /* Um cinza claro para o fundo */
+    font-family: 'Arial', sans-serif; /* Define uma fonte padrão */
+}
+
+/* Estilos para o contêiner principal do formulário */
+.container {
+    max-width: 600px; /* Limita a largura máxima do contêiner */
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados para um visual mais suave */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o formulário */
+}
+
+/* Estilo para o título principal do formulário */
+h1 {
+    color: #343a40; /* Cor escura para o título */
+    margin-bottom: 25px; /* Margem inferior para separar do formulário */
+}
