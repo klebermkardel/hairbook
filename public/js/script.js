@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Faz uma requisição POST para a API para realizar o agendamento
-            const response = await fetch('api.php?action=make_appointment', {
+            const response = await fetch('../app/api/api.php?action=make_appointment', {
                 method: 'POST', // Define o método como POST
                 headers: {
                     'Content-Type': 'application/json' // Informa ao servidor que o corpo da requisição é JSON
