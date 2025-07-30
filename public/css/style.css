@@ -18,3 +18,63 @@ h1 {
     color: #343a40; /* Cor escura para o título */
     margin-bottom: 25px; /* Margem inferior para separar do formulário */
 }
+
+/* Estilos para os rótulos dos campos (labels) */
+.form-label {
+    font-weight: bold; /* Deixa o texto do rótulo em negrito */
+    margin-bottom: 5px; /* Adiciona um pequeno espaço abaixo do rótulo e antes do campo de entrada */
+    color: #555; /* Uma cor um pouco mais escura para os rótulos */
+}
+
+/* Estilos para os campos de entrada de texto e seletores */
+.form-control,
+.form-select {
+    border-color: #ced4da; /* Cor da borda padrão do Bootstrap */
+    box-shadow: none; /* Remove a sombra padrão de foco do Bootstrap para maior controle */
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Adiciona uma transição suave para o foco */
+}
+
+/* Estilos para os campos quando estão em foco */
+.form-control:focus,
+.form-select:focus {
+    border-color: #80bdff; /* Cor da borda ao focar (azul mais claro) */
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); /* Sombra suave ao focar */
+    outline: 0; /* Remove o contorno padrão do navegador */
+}
+
+/* Estilos para o botão de agendamento */
+.btn-primary {
+    background-color: #007bff; /* Cor de fundo azul principal do Bootstrap */
+    border-color: #007bff; /* Cor da borda do botão */
+    font-weight: bold; /* Texto do botão em negrito */
+    padding: 10px 20px; /* Aumenta o padding para um botão maior e mais fácil de clicar */
+    margin-top: 20px; /* Adiciona uma margem superior para separar do último campo */
+}
+
+/* Estilos para o botão de agendamento ao passar o mouse (hover) */
+.btn-primary:hover {
+    background-color: #0056b3; /* Cor azul mais escura no hover */
+    border-color: #004085; /* Cor da borda mais escura no hover */
+}
+
+/* Estilos para as mensagens de sucesso/erro */
+#message {
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    font-weight: bold; /* Texto em negrito */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para mensagem de sucesso */
+.alert-success {
+    background-color: #d4edda; /* Fundo verde claro */
+    color: #155724; /* Texto verde escuro */
+    border: 1px solid #c3e6cb; /* Borda verde */
+}
+
+/* Estilo para mensagem de erro */
+.alert-danger {
+    background-color: #f8d7da; /* Fundo vermelho claro */
+    color: #721c24; /* Texto vermelho escuro */
+    border: 1px solid #f5c6cb; /* Borda vermelha */
+}
