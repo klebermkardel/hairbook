@@ -1,0 +1,23 @@
+# .gitignore
+
+# Ignora o arquivo de variáveis de ambiente, que contêm informações sensíveis (credenciais de BD, chaves de API)
+.env
+
+# Ignora pastas de dependências de linguagens e frameworks
+/vendor/       # Pasta para dependências PHP (Composer)
+/node_modules/ # Pasta para dependências JavaScript (npm/yarn), se você usar no futuro
+
+# Ignora arquivos de log e cache que são gerados automaticamente e não devem ser versionados
+*.log
+/cache/
+/tmp/
+
+# Ignora arquivos de sistema operacional específicos (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Ignora arquivos de IDEs (Ex: Visual Studio Code, PHPStorm)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace/.env
