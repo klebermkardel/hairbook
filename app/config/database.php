@@ -7,8 +7,8 @@ define('DB_SERVER', 'localhost');
 // Mude 'root' para o nome de usuário do seu banco de dados MySQL
 define('DB_USERNAME', 'root');
 // Mude '' (string vazia) para a senha do seu usuário do banco de dados MySQL
-define('DB_PASSWORD', '@Ck2025kc');
-// Mude 'cabeleireiro_db' para o nome do seu banco de dados
+define('DB_PASSWORD', '');
+// Mude 'hairbook' para o nome do seu banco de dados
 define('DB_NAME', 'hairbook');
 
 // Opcional: Configura o charset para a conexão com o banco de dados
